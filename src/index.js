@@ -7,6 +7,16 @@ const processZipList = async () => {
     filteredList = repeatedZipList.filter(element => {
         return !this[element.cep] && (this[element.cep] = true);
     }, Object.create(null));
+
+    return filteredList;
 }
 
-processZipList();
+const orderZipList = async () => {
+    let messyList = await processZipList();
+
+    let orderedList = messyList.sort((a, b) => a.logradouro.length - b.logradouro.length);
+
+    return console.log(orderedList);
+}
+
+orderZipList();
