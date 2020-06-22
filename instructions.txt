@@ -1,4 +1,4 @@
 1) Receber via CLI lista de CEPs enviados pelo user separadas por vírgula OK
 2) Consultar CEPs OK
-3) Montar lista de CEPs sem repeti-los e sem incluir erros
+3) Montar lista de CEPs sem repeti-los e sem incluir erros OK
 4) Organizar lista de forma crescente pelo nº de caracteres do logradouro

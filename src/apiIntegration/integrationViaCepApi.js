@@ -14,7 +14,7 @@ const selectedZipCodes = async () => {
     }
 }
 
-//função que consulta os ceps na Api da Via Cep
+//Função que consulta os ceps na Api da Via Cep
 const gettingZipInfos = async () => {
     try {
 
@@ -29,7 +29,6 @@ const gettingZipInfos = async () => {
             }
         }
 
-        console.log(zipInfos);
         return zipInfos;
 
     }
@@ -38,33 +37,4 @@ const gettingZipInfos = async () => {
     }
 }
 
-gettingZipInfos();
-
-// let exampleArr = [13444543, 13425650, 13424540, 13424540];
-// let respArr = [];
-
-// const getZipCode = async () => {
-//     try {
-
-//         for (const zipCode of exampleArr) {
-//             const response = await axios.get(`${url}/${zipCode}/json`);
-//             if(!response.data.erro === true) {
-//                 respArr.push(response.data);
-//             }
-//         }
-
-//         respArr.forEach(element => {
-
-//         });
-
-//         console.log(respArr);
-
-
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
-
-// getZipCode();
-// getZipArray();
-
+module.exports = { gettingZipInfos };
