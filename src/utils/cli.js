@@ -1,35 +1,3 @@
-//Método 1
-//Fazer com process.argv
-
-// const readline = require('readline');
-
-// //CLI question
-// console.log('Type ZIP Code, separate them with commas:  ');
-
-// let userAnswerArray = [];
-
-// const userInfos = () => {
-
-//   const rl = readline.createInterface({
-//     input: process.stdin,
-//   });
-
-//   rl.question('ZIP Codes', (answer) => {
-//     // console.log(`ZIP Codes: ${answer}`);
-//     userAnswerArray = answer;
-
-//     rl.close();
-
-//     return userAnswerArray;
-
-//   });
-// }
-
-// module.exports = userInfos;
-
-//---------------------------------------------------------------------------------------------
-
-//Método 2
 const inquirer = require('inquirer');
 
 //Função que define a interface de linha de comando
